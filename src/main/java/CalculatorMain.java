@@ -10,23 +10,21 @@ public class CalculatorMain {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        double num1 = getValue();
-        double num2 = getValue();
+        int num1 = getValue();
+        int num2 = getValue();
         char operation = getOperation();
-        double result = calc(num1, num2, operation);
+        int result = calc(num1, num2, operation);
         System.out.println("Result: " + result);
-
-
     }
 
-    public static double getValue() throws IOException {
-        double num;
+    public static int getValue() throws IOException {
+        int num;
         System.out.println("Enter value: ");
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
         String value = reader.readLine();
         try {
-            num = Double.parseDouble(value);
+            num = Integer.parseInt(value);
         } catch (NumberFormatException e) {
             System.out.println("Wrong format. Enter value: ");
             num = getValue();
@@ -37,15 +35,15 @@ public class CalculatorMain {
     public static char getOperation() throws IOException {
         char operation;
 
-        System.out.println("Enter operation: ");
+        System.out.println("Enter hierarchy.operation: ");
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
         operation = reader.readLine().charAt(0);
         return operation;
     }
 
-    public static double calc(double num1, double num2, char operation) throws IOException {
-        double result;
+    public static int calc(int num1, int num2, char operation) throws IOException {
+        int result;
         switch (operation) {
             case '+':
                 result = num1 + num2;
@@ -61,8 +59,8 @@ public class CalculatorMain {
                 break;
             default:
                 result = calc(num1, num2, getOperation());
+                break;
         }
         return result;
     }
-
 }
