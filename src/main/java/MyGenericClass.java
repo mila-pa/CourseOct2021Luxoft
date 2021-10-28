@@ -1,4 +1,6 @@
-public class MyGenericClass {
+public class MyGenericClass <T extends Number>{
+    T[] arr;
+
 
 
 }

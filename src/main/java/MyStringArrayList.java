@@ -7,39 +7,83 @@ public class MyStringArrayList implements List {
     private static int DEFAULT_SIZE = 16;
     private static int FACTOR_INCREASE_SIZE = 2;
     private String[] buffer;
-    private int pointer;
+    private static final String[] emptyList = new String[0];
+    private int size;
+    private int counter = 0;
 
-    public MyStringArrayList(int size) {
-        this.buffer = new String[size];
-        this.pointer = 0;
+//    public MyStringArrayList(int size) {
+//        this.buffer = new String[size];
+////        this.pointer = pointer;
+//    }
+
+    public MyStringArrayList (int size){
+        if (size > 0) {
+            this.buffer = new String[size];
+        }
+        else {
+            if (size != 0) {
+                throw new IllegalArgumentException("Illegal Capacity: " + size);
+            }
+            this.buffer = emptyList;
+        }
     }
 
-    public MyStringArrayList(){
-        this(DEFAULT_SIZE);
-    }
-    @Override
-    public int size() {
-        return pointer;
+    public MyStringArrayList() {
+        this.buffer = emptyList;
     }
 
-    private void reallocate(int newSize) {
-        String[] newBuffer = new String[newSize];
-        System.arraycopy(buffer, 0, newBuffer, 0, pointer);
-        buffer = newBuffer;
+//    @Override
+    public int myArraySize() {
+        return this.size;
+    }
+
+//    private void reallocate(int newSize) {
+////
+////        String[] newBuffer = new String[newSize];
+////        System.arraycopy(buffer, 0, newBuffer, 0, size);
+////        buffer = newBuffer;
+////
+////    }
+
+    public String[] grow() {
+        return this.buffer = Arrays.copyOf(this.buffer, this.size*FACTOR_INCREASE_SIZE+1);
+
+    }
+
+    public void add(String element, String[] buffer, int size) {
+        if (size == buffer.length) {
+            buffer = this.grow();
+        }
+        buffer[size] = element;
+        this.size = size + 1;
+    }
+
+    public boolean add(String element) {
+        ++this.counter;
+        this.add(element, this.buffer, this.counter);
+        return true;
     }
 
     //    @Override
-    public boolean add(String str) {
-        try{
-            if (pointer >= buffer.length -1) {
-                reallocate(buffer.length * FACTOR_INCREASE_SIZE);
-            }
-            this.buffer[pointer] = String.valueOf(0);
-            return true;
-        } catch (OutOfMemoryError e) {
-            return false;
-        }
+//    public boolean add(String element) {
+//
+//        try{
+//            if (size >= buffer.length -1) {
+//
+//                reallocate(buffer.length * FACTOR_INCREASE_SIZE);
+//            }
+//            size ++;
+//            this.buffer[size] = element;
+//            return true;
+//        } catch (OutOfMemoryError e) {
+//            return false;
+//        }
+//
+//    }
 
+    @Override
+    public int size() {
+        return 0;
     }
 
     @Override
@@ -68,12 +112,16 @@ public class MyStringArrayList implements List {
         return false;
     }
 
-
-
     @Override
     public boolean remove(Object o) {
+        return false;
+    }
+
+
+    //    @Override
+    public boolean remove(String element) {
         int sizebefore = this.size();
-        this.remove("123");
+        this.remove(element);
         int sizeafter = this.size();
         return sizeafter == (sizebefore - 1) ? false : true;
     }
@@ -162,7 +210,7 @@ public class MyStringArrayList implements List {
     public String toString() {
         return "MyStringArrayList{" +
                 "buffer=" + Arrays.toString(buffer) +
-                ", pointer=" + pointer +
+                ", size=" + size +
                 '}';
     }
 }

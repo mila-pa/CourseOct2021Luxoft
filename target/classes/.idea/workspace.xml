@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adfe6cb7-54ad-4edd-a61a-3ce89de625a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyStringArrayList.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hierarchy/Emmitent.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hierarchy/HierarchyMain.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hierarchy/Market.java" afterDir="false" />
@@ -12,10 +10,10 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/hierarchy/operation/OperType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hierarchy/operation/Operation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hierarchy/valut/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyStringArrayListMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGenericClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGenericClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyStringArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyStringArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyStringArrayListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyStringArrayListMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CalculatorMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CalculatorMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +61,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyTestProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sqa-049-examples/School" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.365" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MyDocuments\JAVA\Calculator\src\main\java\hierarchy" />
     </key>
@@ -143,12 +144,28 @@
       <option name="project" value="LOCAL" />
       <updated>1634654600250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="arrayList">
+      <created>1635349470102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635349470102</updated>
+    </task>
+    <task id="LOCAL-00004" summary="arrayListMain">
+      <created>1635349658036</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635349658036</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="arrayList" />
+    <MESSAGE value="arrayListMain" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrayListMain" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1634653868331">
@@ -163,42 +180,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1634570528494" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1635257016076">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1635350177913">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1635257016076" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1635350177913" />
     <state x="82" y="331" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1634920650603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="82" y="331" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1634920650603" />
+    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1635349632847">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="272" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1635349632847" />
     <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1634929514610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1634929514610" />
-    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1634654599646">
+    <state x="424" y="7" key="CommitChangelistDialog2" timestamp="1635349657374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1634654599646" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1634923306325">
+    <state x="424" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1635349657374" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1635355453798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1634923306325" />
-    <state width="1492" height="258" key="GridCell.Tab.0.bottom" timestamp="1635257350919">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1635355453798" />
+    <state width="1492" height="258" key="GridCell.Tab.0.bottom" timestamp="1635413020637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635257350919" />
-    <state width="1492" height="258" key="GridCell.Tab.0.center" timestamp="1635257350918">
+    <state width="1492" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635413020637" />
+    <state width="1492" height="258" key="GridCell.Tab.0.center" timestamp="1635413020637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="258" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635257350918" />
-    <state width="1492" height="258" key="GridCell.Tab.0.left" timestamp="1635257350918">
+    <state width="1492" height="258" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635413020637" />
+    <state width="1492" height="258" key="GridCell.Tab.0.left" timestamp="1635413020637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="258" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635257350918" />
-    <state width="1492" height="258" key="GridCell.Tab.0.right" timestamp="1635257350918">
+    <state width="1492" height="258" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635413020637" />
+    <state width="1492" height="258" key="GridCell.Tab.0.right" timestamp="1635413020637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="258" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635257350918" />
+    <state width="1492" height="258" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635413020637" />
     <state width="1492" height="252" key="GridCell.Tab.1.bottom" timestamp="1635104443892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,18 +240,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="37" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1634654241292" />
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1634656908001">
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1635349662780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1634656908001" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1635255629519">
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635349662780" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1635412120094">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1635255629519" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634654616263">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1635412120094" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1635355333032">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1634654616263" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1635355333032" />
+    <state x="477" y="204" key="git4idea.merge.GitPullDialog" timestamp="1635355126563">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1635355126563" />
+    <state x="209" y="108" key="new project wizard" timestamp="1635355292688">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="108" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1635355292688" />
     <state x="599" y="203" key="svn.repositoryBrowser" timestamp="1634654152023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -240,12 +269,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MyStringArrayListMain.java</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/src/main/java/MyStringArrayListMain.java</url>
+          <line>17</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MyStringArrayListMain.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/MyStringArrayListMain.java</url>
           <line>10</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
