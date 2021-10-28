@@ -4,27 +4,25 @@ public class MyStringArrayList implements List {
 
 //    ArrayList<String> list = new ArrayList<String>();
 
-    private static int DEFAULT_SIZE = 16;
-    private static int FACTOR_INCREASE_SIZE = 2;
+//    private static int DEFAULT_SIZE = 16;
+    private final static int FACTOR_INCREASE_SIZE = 2;
     private String[] buffer;
     private static final String[] emptyList = new String[0];
-    private int size;
+    private int mySize;
     private int counter = 0;
 
-//    public MyStringArrayList(int size) {
-//        this.buffer = new String[size];
-////        this.pointer = pointer;
-//    }
+    public int getMysize() {
+        return mySize;
+    }
 
-    public MyStringArrayList (int size){
-        if (size > 0) {
-            this.buffer = new String[size];
+    public MyStringArrayList (int mysize){
+        if (mysize > 0) {
+            this.buffer = new String[mysize];
         }
         else {
-            if (size != 0) {
-                throw new IllegalArgumentException("Illegal Capacity: " + size);
+            if (mysize == 0) {
+                this.buffer = emptyList;
             }
-            this.buffer = emptyList;
         }
     }
 
@@ -34,7 +32,7 @@ public class MyStringArrayList implements List {
 
 //    @Override
     public int myArraySize() {
-        return this.size;
+        return this.mySize;
     }
 
 //    private void reallocate(int newSize) {
@@ -46,7 +44,7 @@ public class MyStringArrayList implements List {
 ////    }
 
     public String[] grow() {
-        return this.buffer = Arrays.copyOf(this.buffer, this.size*FACTOR_INCREASE_SIZE+1);
+        return this.buffer = Arrays.copyOf(this.buffer, mySize *FACTOR_INCREASE_SIZE+1);
 
     }
 
@@ -55,12 +53,12 @@ public class MyStringArrayList implements List {
             buffer = this.grow();
         }
         buffer[size] = element;
-        this.size = size + 1;
+        this.mySize = size + 1;
     }
 
     public boolean add(String element) {
-        ++this.counter;
         this.add(element, this.buffer, this.counter);
+        ++this.counter;
         return true;
     }
 
@@ -210,7 +208,7 @@ public class MyStringArrayList implements List {
     public String toString() {
         return "MyStringArrayList{" +
                 "buffer=" + Arrays.toString(buffer) +
-                ", size=" + size +
+                ", size=" + mySize +
                 '}';
     }
 }
